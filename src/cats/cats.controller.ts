@@ -1,7 +1,5 @@
 import { Controller, Get, Req, Post, HttpCode, Param, Body, Query, Put, Delete } from '@nestjs/common';
-import { CreateCatDto } from './dto/create-cat.dto';
-import { ListAllEntities } from './dto/list-all-entities.dto';
-import { UpdateCatDto } from './dto/update-cat.dto';
+import { CreateCatDto, ListAllEntities, UpdateCatDto } from './dto';
 
 @Controller('cats')
 export class CatsController {
