@@ -1,5 +1,11 @@
+import { ObjectType, Field, Int } from '@nestjs/graphql';
+
+@ObjectType()
 export class CreateCatDto {
-    name: string;
-    age: number;
-    breed: string;
+  @Field()
+  readonly name: string;
+  @Field(() => Int)
+  readonly age: number;
+  @Field()
+  readonly breed: string;
 }
