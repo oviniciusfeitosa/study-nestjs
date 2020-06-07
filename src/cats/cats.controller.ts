@@ -8,14 +8,14 @@ import {
   Put,
   Query,
 } from '@nestjs/common';
-import { CreateCatDto } from './dto/create-cat.dto';
+import { CatType } from './dto/cat-type.dto';
 import { ListAllEntities } from './dto/list-all-entities.dto';
 import { UpdateCatDto } from './dto/update-cat.dto';
 
 @Controller('cats')
 export class CatsController {
   @Post()
-  create(@Body() createCatDto: CreateCatDto): string {
+  create(@Body() createCatDto: CatType): string {
     console.log(createCatDto);
     return `This action adds a new cat : { ${createCatDto.age}, ${createCatDto.name}, ${createCatDto.breed} }`;
   }
