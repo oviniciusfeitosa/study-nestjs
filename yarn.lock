@@ -45,7 +45,7 @@
     core-js "^3.4.0"
     lodash.xorby "^4.7.0"
 
-"@apollo/gateway@^0.16.0":
+"@apollo/gateway@^0.16.0", "@apollo/gateway@^0.16.4":
   version "0.16.4"
   resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.16.4.tgz#8302735742657b99b56dacf80a022ebe9b7a2964"
   integrity sha512-PlnG1aaY4FdauC16Mfj3s7VZhSq/7LJQDLk/JDZwdniBJXJvn3I3ON+TkRISttY9yQvQ2GM3eg7hBQQrG917EA==
