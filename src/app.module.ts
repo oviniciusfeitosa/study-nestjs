@@ -8,10 +8,10 @@ import { CatsModule } from './cats/cats.module';
 
 @Module({
   imports: [
+    CatsModule,
     GraphQLModule.forRoot({
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
     }),
-    CatsModule,
   ],
   controllers: [AppController, AdminController],
   providers: [AppService],
